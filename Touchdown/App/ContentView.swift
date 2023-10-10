@@ -23,6 +23,22 @@ extension ContentView {
         y: 5
       )
   }
+  
+  private func renderBannerCard() -> some View {
+    FeaturedTabView()
+      .frame(height: UIScreen.main.bounds.width / 1.475)
+      .padding(.vertical, 20)
+  }
+  
+  private func renderContentView() -> some View {
+    ScrollView(.vertical, showsIndicators: false) {
+      VStack {
+        renderBannerCard()
+        renderFooter()
+      }
+    }
+  }
+  
   private func renderFooter() -> some View {
     FooterView()
       .padding(.horizontal)
@@ -31,7 +47,7 @@ extension ContentView {
     VStack(spacing: 0) {
       renderNavigationBar()
       Spacer()
-      renderFooter()
+      renderContentView()
     }
     .background(colorBackground.ignoresSafeArea(.all, edges: .all))
   }
