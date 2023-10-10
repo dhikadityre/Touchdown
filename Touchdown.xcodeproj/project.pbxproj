@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60C87162AD4E27C00FFEAEA /* NavigationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60C87152AD4E27C00FFEAEA /* NavigationButtonView.swift */; };
+		E60C87182AD4E4B000FFEAEA /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60C87172AD4E4B000FFEAEA /* LogoView.swift */; };
 		E61D3B382AA4933000396588 /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D3B372AA4933000396588 /* TouchdownApp.swift */; };
 		E61D3B3A2AA4933000396588 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D3B392AA4933000396588 /* ContentView.swift */; };
 		E61D3B3C2AA4933200396588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61D3B3B2AA4933200396588 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E60C87152AD4E27C00FFEAEA /* NavigationButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonView.swift; sourceTree = "<group>"; };
+		E60C87172AD4E4B000FFEAEA /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		E61D3B342AA4933000396588 /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61D3B372AA4933000396588 /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
 		E61D3B392AA4933000396588 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				E6B1810D2AD465880068245E /* FooterView.swift */,
+				E60C87152AD4E27C00FFEAEA /* NavigationButtonView.swift */,
+				E60C87172AD4E4B000FFEAEA /* LogoView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60C87162AD4E27C00FFEAEA /* NavigationButtonView.swift in Sources */,
+				E60C87182AD4E4B000FFEAEA /* LogoView.swift in Sources */,
 				E61D3B3A2AA4933000396588 /* ContentView.swift in Sources */,
 				E61D3B382AA4933000396588 /* TouchdownApp.swift in Sources */,
 				E6B1810E2AD465880068245E /* FooterView.swift in Sources */,

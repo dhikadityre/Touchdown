@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
+  var body: some View { render() }
+}
+
+extension ContentView {
+  private func renderNavigationBar() -> some View {
+    NavigationButtonView()
+      .padding()
+      .background(Color.white)
+      .shadow(
+        color: Color.black.opacity(0.05),
+        radius: 5,
+        x: 0,
+        y: 5
+      )
+  }
+  private func renderFooter() -> some View {
     FooterView()
       .padding(.horizontal)
+  }
+  private func render() -> some View {
+    VStack(spacing: 0) {
+      renderNavigationBar()
+      Spacer()
+      renderFooter()
+    }
+    .background(colorBackground.ignoresSafeArea(.all, edges: .all))
   }
 }
 

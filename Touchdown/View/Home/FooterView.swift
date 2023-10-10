@@ -23,7 +23,8 @@ extension FooterView {
     Image("logo-lineal")
       .resizable()
       .renderingMode(.template)
-      .layoutPriority(1)
+      .frame(width: 30, height: 30)
+      .layoutPriority(0)
   }
   
   private func renderCopyright() -> some View {
@@ -40,6 +41,7 @@ extension FooterView {
       renderBody()
       renderLogo()
       renderCopyright()
+        .padding(.bottom, 10)
     }
   }
 }
