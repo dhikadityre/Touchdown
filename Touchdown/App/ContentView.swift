@@ -30,11 +30,27 @@ extension ContentView {
       .padding(.vertical, 20)
   }
   
+  private func renderCategory() -> some View {
+    CategoryGridView()
+  }
+  
+  private func renderProductList() -> some View {
+    VStack(spacing: 0) {
+      TitleView(title: "Helmets")
+      LazyVGrid(columns: gridLayout, spacing: 15) {
+        ForEach(products) { product in
+          ProductItemView(product: product)
+        }
+      }.padding(15)
+    }
+  }
+  
   private func renderContentView() -> some View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(spacing: 0) {
         renderBannerCard()
-        CategoryGridView()
+        renderCategory()
+        renderProductList()
         renderFooter()
       }
     }
