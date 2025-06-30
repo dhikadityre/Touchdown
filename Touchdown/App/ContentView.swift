@@ -45,6 +45,13 @@ extension ContentView {
     }
   }
   
+  private func renderBrandList() -> some View {
+    VStack(spacing: 0) {
+      TitleView(title: "Brands")
+      BrandGridView()
+    }
+  }
+  
   private func renderContentView() -> some View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(spacing: 0) {
