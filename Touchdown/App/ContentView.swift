@@ -32,8 +32,9 @@ extension ContentView {
   
   private func renderContentView() -> some View {
     ScrollView(.vertical, showsIndicators: false) {
-      VStack {
+      VStack(spacing: 0) {
         renderBannerCard()
+        CategoryGridView()
         renderFooter()
       }
     }
@@ -46,7 +47,6 @@ extension ContentView {
   private func render() -> some View {
     VStack(spacing: 0) {
       renderNavigationBar()
-      Spacer()
       renderContentView()
     }
     .background(colorBackground.ignoresSafeArea(.all, edges: .all))

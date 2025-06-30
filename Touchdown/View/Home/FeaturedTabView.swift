@@ -33,5 +33,6 @@ struct FeaturedTabView_Previews: PreviewProvider {
     FeaturedTabView()
       .previewLayout(.sizeThatFits)
       .padding()
+      .background(Color.gray)
   }
 }
